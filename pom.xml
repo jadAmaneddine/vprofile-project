@@ -27,7 +27,7 @@
 
         <NEXUSIP>172.31.30.49</NEXUSIP>
         <NEXUSPORT>8081</NEXUSPORT>
-        <NEXUS-GRP-REPO>vpro-maven-group</NEXUS-GRP-REPO>
+    <NEXUS-GRP-REPO>vpro-maven-group</NEXUS-GRP-REPO>
 
     </properties>
 
@@ -326,7 +326,7 @@
     <repositories>
     <repository>
       <id>${NEXUS-GRP-REPO}</id>
-      <url>http://172.31.30.49:8081/repository/vpro-maven-group/</url>
+      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP-REPO}/</url>
     </repository>
   </repositories>
 </project>
