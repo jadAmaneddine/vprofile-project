@@ -24,11 +24,6 @@
         <logback.version>1.5.6</logback.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-
-        <NEXUSIP>172.31.30.49</NEXUSIP>
-        <NEXUSPORT>8081</NEXUSPORT>
-    <NEXUS-GRP-REPO>vpro-maven-group</NEXUS-GRP-REPO>
-
     </properties>
 
 
@@ -254,14 +249,6 @@
             <version>2.0.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-clean-plugin</artifactId>
-    <version>3.2.0</version>
-</dependency>
-
-
     </dependencies>
 
 
@@ -308,14 +295,6 @@
  		            </execution>
  		        </executions>
  		</plugin>
-        <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.1.0</version>
-
- 
-
-</plugin> 
 <!--            <plugin>-->
 <!--                <groupId>org.jacoco</groupId>-->
 <!--                <artifactId>jacoco-maven-plugin</artifactId>-->
@@ -341,39 +320,8 @@
     </build>
     <repositories>
     <repository>
-      <id>vpro-maven-group</id>
-      <url>http://172.31.30.49:8081/repository/vpro-maven-group/</url>
+      <id>${NEXUS-GRP-REPO}</id>
+      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP-REPO}/</url>
     </repository>
-    <repository>
-    <id>central</id>
-    <url>https://repo.maven.apache.org/maven2</url>
-    <releases>
-        <enabled>true</enabled>
-    </releases>
-    <snapshots>
-        <enabled>false</enabled>
-    </snapshots>
-</repository>
-
   </repositories>
-                 <pluginRepositories>
-    <pluginRepository>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-        <snapshots>
-            <enabled>false</enabled>
-        </snapshots>
-    </pluginRepository>
-</pluginRepositories>
-<distributionManagement>
-    <repository>
-        <id>vpro-maven-group</id>
-        <name>VPro Maven Group Repository</name>
-        <url>http://172.31.30.49:8081/repository/vpro-maven-group/</url>
-    </repository>
-</distributionManagement>
-
 </project>
