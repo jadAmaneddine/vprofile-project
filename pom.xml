@@ -341,8 +341,8 @@
     </build>
     <repositories>
     <repository>
-      <id>vpro-maven-group</id>
-      <url>https://repo.maven.apache.org/maven2</url>
+      <id>${NEXUS-GRP-REPO}</id>
+      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP-REPO}/</url>
     </repository>
     <repository>
     <id>central</id>
