@@ -255,7 +255,11 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-clean-plugin -->
-
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-clean-plugin</artifactId>
+    <version>3.2.0</version>
+</dependency>
 
 
     </dependencies>
@@ -304,11 +308,11 @@
  		            </execution>
  		        </executions>
  		</plugin>
-     <plugin>
+        <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.1.0</version>
-</plugin>    
+</plugin> 
 <!--            <plugin>-->
 <!--                <groupId>org.jacoco</groupId>-->
 <!--                <artifactId>jacoco-maven-plugin</artifactId>-->
@@ -334,8 +338,8 @@
     </build>
     <repositories>
     <repository>
-      <id>vpro-maven-group</id>
-      <url>http://172.31.30.49:8081/repository/vpro-maven-group/</url>
+      <id>${NEXUS-GRP-REPO}</id>
+      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP-REPO}/</url>
     </repository>
   </repositories>
 </project>
