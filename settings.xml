@@ -29,7 +29,7 @@
     <mirror>
       <id>nexus</id>
       <name>Nexus Group</name>
-      <url>http://${nexus.ip}:${nexus.port}/repository/vpro-maven-group/</url>
+      <url>http://172.31.30.49:8081/repository/vpro-maven-group/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
