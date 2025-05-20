@@ -5,13 +5,13 @@
   <servers>
     <server>
       <id>vprofile-snapshot</id>
-      <username>${nexus.user}</username>
-      <password>${nexus.pass}</password>
+      <username>admin</username>
+      <password>admin</password>
     </server>
     <server>
       <id>vprofile-release</id>
-      <username>${nexus.user}</username>
-      <password>${nexus.pass}</password>
+      <username>admin</username>
+      <password>admin</password>
     </server>
     <server>
       <id>vpro-maven-central</id>
@@ -20,8 +20,8 @@
     </server>
     <server>
       <id>vpro-maven-group</id>
-      <username>${nexus.user}</username>
-      <password>${nexus.pass}</password>
+      <username>admin</username>
+      <password>admin</password>
     </server>
   </servers>
 
