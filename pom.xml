@@ -368,4 +368,12 @@
         </snapshots>
     </pluginRepository>
 </pluginRepositories>
+<distributionManagement>
+    <repository>
+        <id>vpro-maven-group</id>
+        <name>VPro Maven Group Repository</name>
+        <url>http://172.31.30.49:8081/repository/vpro-maven-group/</url>
+    </repository>
+</distributionManagement>
+
 </project>
