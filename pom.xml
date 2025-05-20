@@ -344,6 +344,17 @@
       <id>${NEXUS-GRP-REPO}</id>
       <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP-REPO}/</url>
     </repository>
+    <repository>
+    <id>central</id>
+    <url>https://repo.maven.apache.org/maven2</url>
+    <releases>
+        <enabled>true</enabled>
+    </releases>
+    <snapshots>
+        <enabled>false</enabled>
+    </snapshots>
+</repository>
+
   </repositories>
                  <pluginRepositories>
     <pluginRepository>
