@@ -27,8 +27,8 @@
 
   <mirrors>
     <mirror>
-      <id>nexus</id>
-      <name>Nexus Group</name>
+      <id>vpro-maven-group</id>
+      <name>vpro-maven-group</name>
       <url>http://172.31.30.49:8081/repository/vpro-maven-group/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
