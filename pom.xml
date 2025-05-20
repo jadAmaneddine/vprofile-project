@@ -313,18 +313,7 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.1.0</version>
 
-                <pluginRepositories>
-    <pluginRepository>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-        <snapshots>
-            <enabled>false</enabled>
-        </snapshots>
-    </pluginRepository>
-</pluginRepositories>
+ 
 
 </plugin> 
 <!--            <plugin>-->
@@ -356,4 +345,16 @@
       <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP-REPO}/</url>
     </repository>
   </repositories>
+                 <pluginRepositories>
+    <pluginRepository>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </pluginRepository>
+</pluginRepositories>
 </project>
