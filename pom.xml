@@ -342,7 +342,7 @@
     <repositories>
     <repository>
       <id>vpro-maven-group</id>
-      <url>http://172.31.30.49:8081/repository/vpro-maven-group/</url>
+      <url>https://repo.maven.apache.org/maven2</url>
     </repository>
     <repository>
     <id>central</id>
