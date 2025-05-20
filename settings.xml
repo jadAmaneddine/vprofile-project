@@ -23,6 +23,11 @@
       <username>${nexus.user}</username>
       <password>${nexus.pass}</password>
     </server>
+     <server>
+      <id>vpro-maven-group</id>
+      <username>admin</username>
+      <password>admin</password>
+    </server>
   </servers>
 
   <mirrors>
