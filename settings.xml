@@ -15,8 +15,8 @@
     </server>
     <server>
       <id>vpro-maven-central</id>
-      <username>${nexus.user}</username>
-      <password>${nexus.pass}</password>
+      <username>admin</username>
+      <password>admin</password>
     </server>
     <server>
       <id>vpro-maven-group</id>
