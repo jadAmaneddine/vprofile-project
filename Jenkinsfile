@@ -20,7 +20,10 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                sh 'mvn clean install -s settings.xml -U -DskipTests'
+                
+                mvn help:evaluate -Dexpression=settings.localRepository
+
+                //sh 'mvn clean install -s settings.xml -U -DskipTests'
             }
         }
     }
