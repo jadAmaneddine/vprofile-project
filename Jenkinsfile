@@ -19,7 +19,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh ' mvn clean deploy -DskipTests install'
+                sh 'sudo mvn clean deploy -DskipTests install'
                 
             }
         }
