@@ -19,14 +19,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '''
-                    mvn -s settings.xml -DskipTests \
-                        -Dnexus.user=${NEXUS_USER} \
-                        -Dnexus.pass=${NEXUS_PASS} \
-                        -Dnexus.ip=${NEXUSIP} \
-                        -Dnexus.port=${NEXUSPORT} \
-                        install
-                '''
+                sh ' mvn -s settings.xml -DskipTests install'
+                
             }
         }
     }
