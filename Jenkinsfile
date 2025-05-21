@@ -14,6 +14,7 @@ pipeline {
         NEXUSPORT = '8081'
         NEXUS_USER = 'admin'
         NEXUS_PASS = 'admin'
+        NEXUS_LOGIN = 'nexuslogin'
     }
 
     stages {
