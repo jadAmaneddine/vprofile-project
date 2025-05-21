@@ -21,16 +21,11 @@ pipeline {
             steps {
                 script {
                     // Print relevant environment variables that Maven should use
-                    sh 'echo "NEXUS_USER: $NEXUS_USER"'
-                    sh 'echo "NEXUS_PASS: $NEXUS_PASS"'
-                    sh 'echo "CENTRAL_REPO: $CENTRAL_REPO"'
-                    sh 'echo "NEXUSIP: $NEXUSIP"'
-                    sh 'echo "NEXUSPORT: $NEXUSPORT"'
-                    sh 'echo "NEXUS_GRP_REPO: $NEXUS_GRP_REPO"'
+                    
 
                     // Run Maven in debug mode (-X)
                     // This will be verbose, but it will show us what Maven is doing.
-                    sh 'mvn -X -s settings.xml -DskipTests install'
+                    sh 'mvn -s settings.xml -DskipTests install'
                 }
             }
         }
